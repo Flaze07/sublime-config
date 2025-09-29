@@ -1,0 +1,10 @@
+{
+	"font_size": 9,
+	"hot_exit": "disabled",
+	"ignored_packages":
+	[
+	],
+	"index_files": true,
+	"theme": "Default Dark.sublime-theme",
+	"relative_line_numbers": true,
+}
