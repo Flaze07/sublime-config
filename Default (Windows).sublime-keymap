@@ -46,5 +46,14 @@
 	{
 		"keys": ["alt+`"],
 		"command": "toggle_terminus_panel",
+	},
+	{
+		"keys": ["R"],
+		"command": "lsp_symbol_rename",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": true },
+			{ "key": "setting.is_widget", "operand": false },
+		]
 	}
 ]
