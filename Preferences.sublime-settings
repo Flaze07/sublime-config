@@ -1,5 +1,5 @@
 {
-	"font_size": 9,
+	"font_size": 10,
 	"hot_exit": "disabled",
 	"ignored_packages":
 	[
@@ -7,4 +7,6 @@
 	"index_files": true,
 	"theme": "Default Dark.sublime-theme",
 	"relative_line_numbers": true,
+	"vintage_start_in_command_mode": true,
+	"vintage_ctrl_keys": true,
 }

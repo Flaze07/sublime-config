@@ -1,24 +1,22 @@
 [
 	{
 		"keys": [
-			"ctrl+k",
-			"ctrl+i"
+			"K",
 		],
 		"command": "lsp_hover",
 		"context": [
-			{
-				"key": "lsp.session_with_capability",
-				"operand": "hoverProvider"
-			}
+			{ "key": "lsp.session_with_capability", "operand": "hoverProvider" },
+			{ "key": "setting.command_mode", "operand": true }
 		]
 	},
     {
-        "keys": ["ctrl+k", "ctrl+l"],
+        "keys": ["g", "d"],
         "command": "lsp_symbol_definition",
         "args": {"side_by_side": false, "force_group": true, "fallback": false, "group": -1},
         "context": [
             {"key": "lsp.session_with_capability", "operand": "definitionProvider"},
-            {"key": "auto_complete_visible", "operand": false}
+            {"key": "auto_complete_visible", "operand": false},
+            { "key": "setting.command_mode", "operand": true }
         ]
     },
 	// Run Code Action
@@ -27,4 +25,26 @@
         "command": "lsp_code_actions",
         "context": [{"key": "lsp.session_with_capability", "operand": "codeActionProvider"}]
     },
+    { 
+    	"keys": ["H"], 
+    	"command": "prev_view",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": true },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},
+	{ 
+		"keys": ["L"], 
+		"command": "next_view",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": true },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},
+	{
+		"keys": ["alt+`"],
+		"command": "toggle_terminus_panel",
+	}
 ]

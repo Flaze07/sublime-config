@@ -1,0 +1,15 @@
+{
+  "shell_configs": [
+    {
+      "name": "UCRT64",
+      "cmd": [
+        "cmd.exe",
+        "/c",
+        "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64"
+      ],
+      "env": {},
+      "enable": true,
+      "platforms": ["windows"]
+    }
+  ]
+}
