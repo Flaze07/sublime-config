@@ -55,5 +55,9 @@
 			{ "key": "setting.command_mode", "operand": true },
 			{ "key": "setting.is_widget", "operand": false },
 		]
+	},
+	{
+		"keys": ["ctrl+b", "ctrl+o"],
+		"command": "close_other_tabs",
 	}
 ]
